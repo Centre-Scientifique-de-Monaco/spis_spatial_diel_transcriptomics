@@ -2,8 +2,8 @@
 #### [Haering Margaux](https://orcid.org/0009-0002-8755-5852), [Ganot Philippe](https://orcid.org/0000-0003-1743-9709), [Zoccola Didier](https://orcid.org/0000-0002-1524-8098), [Tambutté Eric](https://orcid.org/0000-0002-1419-3785) & [Venn Alexander](https://orcid.org/0000-0003-0544-0884)
 ---
 
-Scripts and supplementaries for the paper [to come]().
-</br>Supplementary atlas available at : https://centre-scientifique-de-monaco.github.io/spis_spatial_diel_transcriptomics
+Scripts and supplementaries for the paper [to come](https://github.com/Centre-Scientifique-de-Monaco/spis_spatial_diel_transcriptomics).
+</br>Supplementary atlas available [here](https://centre-scientifique-de-monaco.github.io/spis_spatial_diel_transcriptomics)
 </br>
 
 ---
