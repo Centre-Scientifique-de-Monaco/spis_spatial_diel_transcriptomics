@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Coral Expression Atlas</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="js/pca.js" defer></script>
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+  <div id="topMenu">
+    <h1 class="site-title">
+      <a href="index.html">
+    <img src="img/logo.png" alt="Logo" class="logo">
+    Coral Expression Atlas
+  </a></h1>
+    <div id="menuButtons">
+      <button><a href="index.html">Home</a></button>
+      <button><a href="pca.html">Overview</a></button>
+      <button><a href="explore.html">Explore</a></button>
+      <button><a href="ext.html">Discover</a></button>
+      <button><a href="contact.html">Contact</a></button>
+
+    </div>
+  </div>
+
+  <div id="mainContainer">
+    <div id="infoPanel">
+      <h2>3D PCA</h2>
+      <p>
+        This 3D plot shows the <b>P</b>rincipal <b>C</b>omponent <b>A</b>nalysis (PC1, PC2, PC3).
+      </p>
+
+      <div class="legend">
+        <strong>Groups : </strong><br><br>
+        <div class="legend-item">
+          <div class="legend-color" style="background:#F5AB42;"></div> LDD day
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background:#F56342;"></div> LDD night
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background:#ACE3E8;"></div> HDD day
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background:#3797ED;"></div> HDD night
+        </div>
+      <br><br><strong>Variance : </strong>
+    <br><br>  PC1 : 72.1% <br> PC2 : 5.5% <br> PC3 : 4%
+
+    </div>
+  </div>
+
+  <div id="pcaContainer">
+    <svg id="pcaPlot"></svg>
+  </div>
+
+</body>
+</html>

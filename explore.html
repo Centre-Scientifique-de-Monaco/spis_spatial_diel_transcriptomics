@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coral Expression Atlas</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="js/explore.js" defer></script>
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="topMenu">
+      <h1 class="site-title">
+        <a href="index.html">
+      <img src="img/logo.png" alt="Logo" class="logo">
+      Coral Expression Atlas
+    </a></h1>
+      <div id="menuButtons">
+        <button><a href="index.html">Home</a></button>
+        <button><a href="pca.html">Overview</a></button>
+        <button><a href="explore.html">Explore</a></button>
+        <button><a href="ext.html">Discover</a></button>
+        <button><a href="contact.html">Contact</a></button>
+
+      </div>
+    </div>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <h2>Welcome to the data exploration!</h2>
+        <p>To explore this RNA-seq data experiement, you will start by selecting a category on the right by clicking on the purple bar.
+        <br><br> The order of the experiment is related to its title of condition.
+      <br><br> <b>Example :</b><br> LDD vs HDD - Night : what is up or downregulated is LDD in the night compared to HDD in the night, so basically <span style="color: red;">red</span> represents what's upregulated in LDD and <span style="color: blue;">blue</span> what's upregulated in HDD.
+      <br><br> You have now access to all four comparisons. <br> You can click a dot to highlight the gene but also from the heatmap below. And also reorder the heatmap by clicking on the desired condition.</p>
+        <button id="okButton">OK</button>
+      </div>
+    </div>
+<div style="align-items: center;box-sizing: border-box;margin-left:50px;">
+  <div id='mainWrapper' >
+
+    <div class="side-panel" id="highlightPanel">
+      <h2>Highlighted Gene</h2>
+      <ul id="highlightList"></ul>
+
+      <div id="annotationBox" style="margin-top:20px;">
+        <h3>Annotation</h3>
+        <div id="annotationText" style="font-size:14px; color:#444;">
+          No gene selected.
+        </div>
+      </div>
+    </div>
+  <div class="content-area">
+  <div style="margin-bottom: 20px;">
+    <div>
+      <input
+        type="text"
+        id="geneSearch"
+        placeholder="🔍 Search gene name..."
+        style="padding: 8px; border-radius: 8px; border: 1px solid #ccc; width: 250px;"
+      />
+      <button
+        id="searchButton"
+        style="padding: 8px 12px; border-radius: 8px; border: none; background-color: #4CAF50; color: white; cursor: pointer;">
+        Highlight
+      </button>
+    </div>
+
+  </div>
+
+  <div id="dashboard">
+    <div id="scatterContainer" class="chart-box">
+      <canvas id="scatterChart"></canvas>
+    </div>
+    <div id="barContainer" class="chart-box">
+      <canvas id="barChart"></canvas>
+    </div>
+  </div>
+
+
+
+
+                </div>
+                </div>
+                <div id= "dashboard4" style="display: flex; flex-direction: column; gap: 6px;">
+                  <label>Rearange the heatmap by clicking on a condition directly on the heatmap.
+                    <br><br> Conditions shown in heatmap (unselect or select again):</label>
+                  <div id="condition-tags" class="tags"></div>
+
+                </div>
+                <div id="dashboard2" class="chart-box">
+                                  <div id = "heatmap" style="display:block"></div>
+                                </div>
+
+</body>
+</html>
