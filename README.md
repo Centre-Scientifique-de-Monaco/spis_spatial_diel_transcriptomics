@@ -1,19 +1,24 @@
 # Spatial-Diel Dynamics of Gene Expression across Regions of Flat Coral Microcolonies with Contrasting Symbiont Densities
-#### [Haering Margaux](https://orcid.org/0009-0002-8755-5852), [Ganot Philippe](https://orcid.org/0000-0003-1743-9709), [Zoccola Didier](https://orcid.org/0000-0002-1524-8098), [Tambutté Eric](https://orcid.org/0000-0002-1419-3785) & [Venn Alex](https://orcid.org/0000-0003-0544-0884)
+#### [Haering Margaux](https://orcid.org/0009-0002-8755-5852), [Ganot Philippe](https://orcid.org/0000-0003-1743-9709), [Zoccola Didier](https://orcid.org/0000-0002-1524-8098), [Tambutté Eric](https://orcid.org/0000-0002-1419-3785) & [Venn Alexander](https://orcid.org/0000-0003-0544-0884)
 ---
 
 Scripts and supplementaries for the paper [to come]().
-</br>Supplementary atlas available at : https://margauxhaering.github.io/atlas/atlas
+</br>Supplementary atlas available at : https://centre-scientifique-de-monaco.github.io/spis_spatial_diel_transcriptomics
 </br>
 
 ---
 
 **ORGANISATION**
 
-This repository contains several folders :
-  - **scripts** for preprocessing scripts
-  - **suppl** for supplementary figures and tables
-  - **atlas** for scripts of the atlas
+This repository contains ***2 branches*** :
+
+  ***main*** contains several folders :
+  - scripts : preprocessing scripts
+  - suppl : supplementary figures and tables
+  - raw_counts.txt : raw counts from preprocessing
+
+   ***atlas*** contains scripts about the atlas
+
 
 ---
 
